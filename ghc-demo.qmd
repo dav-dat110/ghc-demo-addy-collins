@@ -1,0 +1,118 @@
+---
+title: GHC Demo Assignment
+subtitle: CSC 110 - Fall 2025
+author: Addy Collins
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-location: body
+    theme: flatly
+  pdf:
+    toc: true
+---
+
+# Setup
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+# Homework
+
+```{r}
+#| fig-cap: Fuel mileage scatterplot
+#| fig-cap-location: top
+
+ggplot(
+  mpg,
+  aes(
+    x = displ,
+    y = hwy
+  )
+) + 
+  geom_point() +
+  labs(
+    title = "Impact of Vehicle Engine Size on Highway Fuel Mileage",
+    x = "Vehicle Engine Size (displacement)",
+    y = "Highway Fuel Mileage"
+  )
+```
+
+### A link to davidson.edu
+
+[Davidson College Website](davidson.edu)
+
+### An unordered list of the other classes I'm taking this semester
+Fall Semester Classes
+
+* POL 336: Politics & the Media
+* HUMES 103
+
+### An ordered list of my top 3 favorite movies
+ 
+Top 3 Favorite Movies
+
+1. Dead Poets Society
+2. SCREAM (original)
+3. Boyz in the Hood
+
+### A footnote
+
+Here is a footnote[^1]
+
+[^1]: footnote reference stuff
+
+### An equation showing the quadratic formula in display mode
+
+display math:
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+### A flowchart diagram in Mermaid
+
+```{mermaid}
+flowchart LR
+  A(Professor Benbow gives an assignment) --> B[I recieve the assignment]
+  B --> C{I decide when I wil do the assignment}
+  C --> D[I complete it as planned]
+  D --> E[I turn it in]
+  C --> F[I procrastinate]
+  F --> G[I work late]
+  G --> E[I turn it in]
+```
+
+### A blockquote
+
+> "Four score and seven years ago our fathers brought forth upon this continent a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal."
+
+### Three callout blocks
+
+:::{.callout-note}
+Just wanted you to make note of this first callout block
+:::
+
+:::{.callout-tip}
+Here's a tip, check out my second callout block!
+:::
+
+:::{.callout-important collapse="true"}
+It's important that you see how awesome it is that this callout black can collapse!
+:::
+
+{{< pagebreak >}}
+
+# Reflection
+
+### Links
+
+**Links** will be useful in my final project because I will be able to provide a direct route to the places I gathered information (I can even put the link to a source in a footnote!) or point my audience to where they can learn more on a topic that I may not be able to go super in depth about. This is a powerful tool for context/empowering the people viewing my page to be curious and informed. Links also make it easy to give credit in a meaningful way. That isn't to say that I won't cite sources in MLA format or other, but rather that those citation methods sometimes don't make it easy for an audience member to quickly check out a source. *Links mean that I can make sure the audience has both proper citations and easily accessible ones.*
+
+### Flowchart diagram in Mermaid
+
+**Flowchart diagrams in Mermaid** will make showing/explaining methodology or process in my final project easier. I will be able to visually display my exploratory data analysis process, which makes it much easier to understand. *Actions/steps might take paragraphs to explain can be streamlined into digestible visuals that keep my audience engaged while they gain key understanding of my methods.*
+
+### Callout blocks
+
+**Callout blocks** will also be useful in my final project.I will be able to insert short explanations that may not be central to a point, but helpful in understanding. I can quickly point out or make note of certain choices without having to wander off on a tangent during an explanation of something else. I can provide tips for understanding a graph, or definitions of words that an average person might not know. I can also highlight key points and call attention to central ideas. Additionally, I can make my callout blocks collapsable so that when the audience isn't using them, they can be out of the way!
